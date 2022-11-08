@@ -29,4 +29,27 @@ public class UserRegistration {
 			System.out.println("lastname is incorrect ");
 		}
 }
+	 public void validEmailId() {
+	        Scanner sc = new Scanner(System.in);
+	        System.out.println("Enter email id");
+	        String email = sc.nextLine();
+
+	        boolean validEmail = Pattern.matches("^[a-z]*.[a-z]+@[a-z]+.[a-z]{2,3}(.[a-z]{2,})*$", email);
+	        if (validEmail) {
+	            System.out.println("Email is valid");
+	        } else {
+	            System.out.println("Email is invalid");
+	        }
+}
+public void validPhoneNumber() {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter Phone number: ");
+	String phoneNumber = sc.nextLine();
+	boolean number = Pattern.matches("^[9][1][ ][6-9]{1}[0-9]{9}$", phoneNumber);
+	if (number) {
+		System.out.println("Phone number is correct");
+	} else {
+		System.out.println("Phone number is incorrect");
+	}
+}
 }

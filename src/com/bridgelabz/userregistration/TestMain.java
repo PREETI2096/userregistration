@@ -6,7 +6,9 @@ public class TestMain {
 		System.out.println("welcome to user registration program");
 		UserRegistration userRegistration = new UserRegistration();
 		//userRegistration.validFirstName();
-		userRegistration.validLastName();
+		//userRegistration.validLastName();
+		//userRegistration.validEmailId();
+	    userRegistration.validPhoneNumber();
 	}
 
 	}
